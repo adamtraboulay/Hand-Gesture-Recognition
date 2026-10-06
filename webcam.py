@@ -1,6 +1,6 @@
 import cv2
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION) #not sure to check if this second part is needed, come back to check but it works for now.
 
 try: 
     if not camera.isOpened():
